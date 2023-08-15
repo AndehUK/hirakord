@@ -27,10 +27,8 @@ class Modal(ui.Modal):
         )
 
     async def on_error(self, itr: discord.Interaction, error: Exception) -> None:
-        try:
-            await itr.response.send_message(str(error), ephemeral=True)
-        except:
-            await itr.followup.send(str(error), ephemeral=True)
+        print(f"Error from Modal component {self.__class__.__name__}:\n{str(error)}")
+        await super().on_error(itr, error)
 
 
 class TextInput(ui.TextInput):
