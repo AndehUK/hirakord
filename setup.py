@@ -1,3 +1,4 @@
+"""
 MIT License
 
 Copyright (c) 2023 Andrew (ExHiraku) M
@@ -19,3 +20,22 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+"""
+
+from setuptools import setup
+
+readme = ""
+with open("README.rst") as f:
+    readme = f.read()
+setup(
+    name="hirakord",
+    version="0.0.1",
+    author="ExHiraku",
+    license="MIT",
+    requires=[],
+    packages=["hirakord"],
+    python_requires=">=3.7",
+    description="Build bots faster with hirakord.",
+    long_description=readme,
+    long_description_content_type="text/x-rst",
+)
