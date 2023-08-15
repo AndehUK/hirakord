@@ -46,5 +46,6 @@ setup(
     long_description_content_type="text/x-rst",
     include_package_data=True,
     install_requires=requirements,
+    extras_require=extras_require,
     python_requires=">=3.8",
 )
