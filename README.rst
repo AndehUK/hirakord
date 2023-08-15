@@ -14,7 +14,6 @@ Planned Features
 ----------------
 - Web-based Documentation
 - Bot templates
-- Release on PyPi
 
 Helpers
 -------
@@ -41,6 +40,7 @@ Helpers
 
 Links
 -----
+- `PyPi Release <https://pypi.org/project/hirakord/>`__
 - `My Website <https://andeh.uk/>`__
 - `My Discord Server <https://discord.gg/ycCeBFjQeK>`__ ~ Support Available!
 
@@ -54,23 +54,20 @@ To install the library without `discord.py <https://github.com/Rapptz/discord.py
 .. code:: sh
 
     # Linux / MacOS
-    $ python3 -m pip install -U git+https://github.com/ExHiraku/hirakord
+    $ python3 -m pip install -U hirakord
 
     # Windows
-    $ py -3 -m pip install -U git+https://github.com/ExHiraku/hirakord
+    $ py -3 -m pip install -U hirakord
 
 To install the library with `discord.py <https://github.com/Rapptz/discord.py/>`__, run the following command
 
 .. code:: sh
 
-    $ git clone https://github.com/ExHiraku/hirakord
-    $ cd hirakord
-
     # Linux / MacOS
-    $ python3 -m pip install -U .[discord]
+    $ python3 -m pip install -U hirakord[discord]
 
     # Windows
-    $ py -3 -m pip install -U .[discord]
+    $ py -3 -m pip install -U hirakord[discord]
 
 Quick Example
 -------------
@@ -81,4 +78,4 @@ Quick Example
     $ python3 -m hirakord helper add logger
 
     # Installing a helper (Windows)
-    $ py -m hirakord helper add logger
+    $ py -3 -m hirakord helper add logger
