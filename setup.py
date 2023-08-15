@@ -24,18 +24,27 @@ SOFTWARE.
 
 from setuptools import setup
 
+requirements = []
+with open("requirements.txt") as f:
+    requirements = f.read().splitlines()
+
 readme = ""
 with open("README.rst") as f:
     readme = f.read()
+
+extras_require = {"discord": ["discord.py>=2.3.2"]}
+
 setup(
     name="hirakord",
-    version="0.0.1",
     author="ExHiraku",
-    license="MIT",
-    requires=[],
+    url="https://github.com/ExHiraku/hirakord",
+    version="0.0.1",
     packages=["hirakord"],
-    python_requires=">=3.7",
+    license="MIT",
     description="Build bots faster with hirakord.",
     long_description=readme,
     long_description_content_type="text/x-rst",
+    include_package_data=True,
+    install_requires=requirements,
+    python_requires=">=3.8",
 )
