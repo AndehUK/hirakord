@@ -31,4 +31,4 @@ To install the library, run the following command
 Quick Example
 -------------
 
-Coming Soon™️
+Coming Soon!
