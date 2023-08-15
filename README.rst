@@ -49,7 +49,7 @@ Installing
 
 **Python3.8 or higher is required**
 
-To install the library without `discord.py <https://andeh.uk/>`__, run the following command
+To install the library without `discord.py <https://github.com/Rapptz/discord.py/>`__, run the following command
 
 .. code:: sh
 
